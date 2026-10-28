@@ -1,0 +1,28 @@
+/* Custom Accessibility & UI Overrides */
+.high-contrast {
+    filter: invert(1) hue-rotate(180deg);
+    background-color: #000 !important;
+}
+
+.high-contrast img, 
+.high-contrast video, 
+.high-contrast iframe {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.libras-window {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse-border {
+    0%, 100% { 
+        border-color: #0054A6; 
+    }
+    50% { 
+        border-color: #FF6B00; 
+    }
+}
+
+.active-libras {
+    animation: pulse-border 2s infinite;
+}
